@@ -15,13 +15,14 @@ Console.WriteLine("2");
 Thread.Sleep(1000);
 Console.WriteLine("1");
 Console.Clear();
-
+while(Hra)
+{
 int SkoreHrac = 0;
 int SkoreNepritel = 0;
 Console.ForegroundColor = ConsoleColor.Green;
-Console.WriteLine("Hrac: 0");
+Console.WriteLine($"Hrac: {score1}");
 Console.ForegroundColor = ConsoleColor.Blue;
-Console.WriteLine("Nepritel: 0");
+Console.WriteLine($"Nepritel:{score2}");
 Console.ForegroundColor = ConsoleColor.White;
 
 Console.WriteLine("---------");
@@ -40,31 +41,22 @@ if (Hrac == "1")
     if (cislo == 3)
     {
         Console.WriteLine("Nepřítel Vyhraje");
+            
+        
     }
-    Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine("Hrac: 0");
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.WriteLine("Nepritel: 1");
-    Console.ForegroundColor = ConsoleColor.White;
+ 
     if (cislo == 2)
     {
         Console.WriteLine("Vyhrál jsi");
+        score++
     }
-    Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine("Hrac: 1");
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.WriteLine("Nepritel: 1");
-    Console.ForegroundColor = ConsoleColor.White;
+   
 
     if (cislo == 1)
     {
         Console.WriteLine("Ani jeden remíza");
     }
-    Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine("Hrac: 1");
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.WriteLine("Nepritel: 1");
-    Console.ForegroundColor = ConsoleColor.White;
+
 
 }
 if (Hrac == "2")
@@ -73,31 +65,18 @@ if (Hrac == "2")
     {
         Console.WriteLine("Prohrál jsi");
     }
-    Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine("Hrac: 1");
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.WriteLine("Nepritel: 2");
-    Console.ForegroundColor = ConsoleColor.White;
+
 
     if (cislo == 2)
     {
         Console.WriteLine("Remíza a nůžky se stupily xdddd");
     }
-    Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine("Hrac: 1");
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.WriteLine("Nepritel: 2");
-    Console.ForegroundColor = ConsoleColor.White;
+
 
     if (cislo == 3)
     {
         Console.WriteLine("Vyhrál jsim, nůžky papír rozstřihly");
     }
-    Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine("Hrac: 2");
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.WriteLine("Nepritel: 2");
-    Console.ForegroundColor = ConsoleColor.White;
 
 }
 if (Hrac == "3")
@@ -114,6 +93,9 @@ if (Hrac == "3")
     {
         Console.WriteLine("Remíza a papíry se zmuchali");
     }
+    break;
+    }
+
 }
 
 
